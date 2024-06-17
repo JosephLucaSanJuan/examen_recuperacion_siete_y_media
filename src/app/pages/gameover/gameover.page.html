@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>gameover</ion-title>
+    <ion-text>¿Quieres volver a jugar</ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="jugador" (ngSubmit)="jugar()">
+    <ion-text>Tienes <!--{{ money }}--> monedas disponibles</ion-text>
+    <ion-card>
+      <ion-item>
+        <ion-input label="¿Cuántas monedas quieres apostar?" labelPlacement="floating" clearInput formControlName="bet"></ion-input>
+      </ion-item>
+    </ion-card>
+    <br>
+    <ion-button (click)="jugar()" expand="fullscreen">
+      Jugar
+    </ion-button>
+    <ion-button>
+      Terminar
+    </ion-button>
+  </form>
+</ion-content>
