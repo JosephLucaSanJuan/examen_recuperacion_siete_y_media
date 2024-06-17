@@ -1,0 +1,7 @@
+{
+  "name": "examen_recuperacion_siete_y_media",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
